@@ -1,0 +1,110 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>{% block title %}{% endblock %}</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<style>
+		.date {
+			color: silver;
+			font-style: italic;
+			font-weight: normal;
+		}
+
+        .sidenav {
+			height:15%;
+			width:200px;
+			position: fixed;
+			top:20px;
+			right: 400px;
+			background-color:#D3D3D3;
+			padding: 10px 20px 16px 16px; 
+		}
+ 
+		.sidenav h5 {
+			font-size:25px;
+			text-align: left;
+		}
+
+		hr {
+			width:60%;
+			text-align:left;
+			margin-left:0;
+		}
+
+		p {
+			width: 60%;
+		}
+
+		.sidenav p {
+			text-align: left;
+		}
+
+		a {
+			color: #00BBFF;
+		}
+
+		.card-text {
+			text-align: right;
+		}
+
+		input {
+			border: none;
+			margin: 0px;
+			padding: 5px;
+			display: block;
+			background-color: #E0E0E0;
+		}
+		
+		textarea {
+			display: block;
+			border: none;
+			background-color: #E0E0E0	;
+		}
+
+		input[type=submit] {
+			background-color: #00BBFF;
+			border: none;
+			color: white;
+			padding: 16px 32px;
+			text-decoration: none;
+			margin: 4px 2px;
+			cursor: pointer;
+		}
+
+		.comment {
+			background-color: #F0F0F0;
+			padding: 5px 0 0 0;
+			width: 35%;
+			margin: 0 0 0 0;
+			height: 75px 0;
+
+		}
+
+		
+
+	</style>
+</head>
+
+<body>
+    <div id="content">
+        {% block content %} {% endblock %}
+    </div>
+
+    <div class="sidenav">
+		<div class="card my-4">
+		<h5 class="card-reader">AlphaHalf</h5>
+			<div class="card-body">
+				<p class="card-text"> -for solutions-</p>
+			</div>
+		</div>
+	</div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>
